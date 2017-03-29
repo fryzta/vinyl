@@ -16,12 +16,17 @@
     "boilerplate"
   ],
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/ratracegrad/nodejs_ejs_boilerplate"
+    "type": "git",
+    "url": "https://github.com/ratracegrad/nodejs_ejs_boilerplate"
   },
   "license": "MIT",
   "dependencies": {
     "ejs": "^2.4.1",
     "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
   }
 }
