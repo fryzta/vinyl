@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <% include ../partials/head %>
+    <head>
+        <% include ../partials/head %>
+        <title>NG! - article1</title>
+
+        <link rel="stylesheet" href="/public/css/main.css">
+        <link rel="stylesheet" href="/public/css/article1.css">
+    </head>
+
     <body>
         <% include ../partials/header %>
 
-        <div class="container">article page 1</div>
+        <div class="hero">
+            <div class="container">
+                <div class="vertical-align">
+                    <h1 class="hero__headline">Rubrik för artikeln</h1>
+                    <h2 class="hero__subheadline">Och en liten underrubrik om man vill ha.</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container article">
+            (skribent-stuff)
+            <div class="block">
+                <section class="article__intro">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Donec elementum ligula eu sapien consequat eleifend. Donec nec dolor erat, condimentum sagittis sem. Praesent porttitor porttitor risus, dapibus rutrum ipsum gravida et. Integer lectus nisi, facilisis sit amet eleifend nec, pharetra ut augue. Integer quam nunc, consequat nec egestas ac, volutpat ac nisi. Sed consectetur dignissim dignissim.
+                </section>
+            </div>
+
+            <div class="block">
+                <div class="article__single">
+                    <p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                    <h3 class="article__subheadline">En rätt frän rubrik</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="article__highlight">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="article__full">
+                    <img src="http://placehold.it/237x316" style="height: 630px; background: gray;" class="two_third">
+                    <p class="one_third">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="article__single">
+                    <p><strong>Lorem ipsum dolor sit amet</strong>, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="article__full col_3">
+                    <img src="http://placehold.it/237x316" style="height: 630px; background: gray;" class="one_third">
+                    <img src="http://placehold.it/237x316" style="height: 630px; background: gray;" class="one_third">
+                    <img src="http://placehold.it/237x316" style="height: 630px; background: gray;" class="one_third">
+                </div>
+            </div>
+
+            <div class="block">
+                <div class="article__full">
+                    <figure class="half first">
+                        <img src="http://placehold.it/100x100" style="width: 100%; height: 400px; background: gray;">
+                        <figcaption>Hejsan</figcaption>
+                    </figure>
+                    <figure  class="half last">
+                        <img src="http://placehold.it/100x100" style="width: 100%; height: 400px; background: gray;">
+                        <figcaption>Hejsan</figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </div>
 
         <% include ../partials/footer %>
         <% include ../partials/scripts %>

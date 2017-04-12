@@ -1,0 +1,36 @@
+.hero {
+    height: 200px;
+    background-color: $darkBlue;
+    text-align: center;
+}
+
+@media (min-width: $grid-md) {
+    .hero {
+        height: 434px;
+    }
+}
+
+.hero__headline {
+    margin-bottom: 10px;
+    color: $white;
+    font-size: 23px;
+}
+
+@media (min-width: $grid-md) {
+    .hero__headline {
+        margin-bottom: 25px;
+        font-size: 42px;
+    }
+}
+
+.hero__subheadline {
+    font-family: $font-family-secondary;
+    font-weight: normal;
+    color: $text-color-secondary;
+}
+
+@media (min-width: $grid-md) {
+    .hero__subheadline {
+        font-size: 28px;
+    }
+}

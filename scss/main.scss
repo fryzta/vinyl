@@ -1,7 +1,25 @@
-// Includes
-@import "includes/base";
+// Variables and mixins
 @import "includes/variables";
-@import "includes/reset";
-@import "includes/grid";
+@import "includes/mixins";
 
-body { background: green; }
+// Reset
+@import "includes/reset";
+@import "includes/typography";
+
+// Base and grid
+@import "includes/grid";
+@import "includes/header";
+@import "includes/footer";
+@import "includes/scaffolding";
+@import "includes/article";
+
+// Core CSS
+@import "includes/media";
+
+// Components
+@import "includes/lists";
+@import "includes/hero";
+@import "includes/nav";
+
+// Utility classes
+@import "includes/utilities";

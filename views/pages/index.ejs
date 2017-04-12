@@ -1,10 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <% include ../partials/head %>
+    <head>
+        <% include ../partials/head %>
+        <title>NG!</title>
+
+        <link rel="stylesheet" href="/public/css/main.css">
+    </head>
     <body>
         <% include ../partials/header %>
 
-        <div class="container">index page</div>
+        <div class="hero">
+            <div class="container">
+                <div class="vertical-align">
+                    <h1 class="hero__headline">Här är en stor fet jävla rubrik</h1>
+                    <h2 class="hero__subheadline">Och en liten underrubrik om man vill ha.</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <ul class="articleList">
+                <div class="articleList__inner">
+                    <li class="articleList__item">
+                        <div class="articleList__content">
+                            <div class="articleList__badge">Ny</div>
+                            <a href="/article1">
+                                <div class="articleList__thumb-container articleList__thumb-pokemon">
+                                    <object class="articleList__thumb-image vertical-align" data="/public/images/articlelist/pika.svg" type="image/svg+xml" alt="X"></object>
+                                </div>
+                                <h3 class="articleList__headline">World of Warcraft</h3>
+                            </a>
+                            <p class="articleList__paragraph">En kort förklarande text kanske kring vad detta kan handla om. Några rader ba.</p>
+                        </div>
+                    </li>
+                    <li class="articleList__item">
+                        <div class="articleList__content">
+                            <img src="http://placehold.it/237x316">
+                            <h3 class="articleList__headline">Pokémon</h3>
+                            <p class="articleList__paragraph">En kort förklarande text kanske kring vad detta kan handla om. Några rader ba.</p>
+                        </div>
+                    </li>
+                    <li class="articleList__item">
+                        <div class="articleList__content">
+                            <img src="http://placehold.it/237x316">
+                            <h3 class="articleList__headline">Esportens historia</h3>
+                            <p class="articleList__paragraph">En kort förklarande text kanske kring vad detta kan handla om. Några rader ba.</p>
+                        </div>
+                    </li>
+                    <li class="articleList__item">
+                        <div class="articleList__content">
+                            <img src="http://placehold.it/237x316">
+                            <h3 class="articleList__headline">Rollspel</h3>
+                            <p class="articleList__paragraph">En kort förklarande text kanske kring vad detta kan handla om. Några rader ba.</p>
+                        </div>
+                    </li>
+                    <li class="articleList__item">
+                        <div class="articleList__content">
+                            <img src="http://placehold.it/237x316">
+                            <h3 class="articleList__headline">World of Warcraft</h3>
+                            <p class="articleList__paragraph">En kort förklarande text kanske kring vad detta kan handla om. Några rader ba.</p>
+                        </div>
+                    </li>
+                    <li class="articleList__item">
+                        <div class="articleList__content">
+                            <img src="http://placehold.it/237x316">
+                            <h3 class="articleList__headline">Pokémon</h3>
+                            <p class="articleList__paragraph">En kort förklarande text kanske kring vad detta kan handla om. Några rader ba.</p>
+                        </div>
+                    </li>
+                    <li class="articleList__item">
+                        <div class="articleList__content">
+                            <img src="http://placehold.it/237x316">
+                            <h3 class="articleList__headline">Esportens historia</h3>
+                            <p class="articleList__paragraph">En kort förklarande text kanske kring vad detta kan handla om. Några rader ba.</p>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <!-- <div class="container">
+            <ul class="row articleList">
+                <li class="col col-sm-2">
+                    <img src="http://placehold.it/237x316">
+                    hesf
+                </li>
+                <li class="col col-sm-2">
+                    <img src="http://placehold.it/237x316">
+                    hesf
+                </li>
+                <li class="col col-sm-2">
+                    <img src="http://placehold.it/237x316">
+                    hesf
+                </li>
+                <li class="col col-sm-2">
+                    <img src="http://placehold.it/237x316">
+                    hesf
+                </li>
+            </ul>
+        </div> -->
+
+        <!-- <div class="container">
+            <ul class="row articleList">
+                <li class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="box-row">
+                        <img src="http://placehold.it/237x316">
+                        hesf
+                    </div>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="box-row">
+                        <img src="http://placehold.it/237x316">
+                        hesf
+                    </div>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="box-row">
+                        <img src="http://placehold.it/237x316">
+                        hesf
+                    </div>
+                </li>
+                <li class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                    <div class="box-row">
+                        <img src="http://placehold.it/237x316">
+                        hesf
+                    </div>
+                </li>
+            </ul>
+        </div> -->
 
         <% include ../partials/footer %>
         <% include ../partials/scripts %>

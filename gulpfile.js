@@ -1,7 +1,12 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
+var useref = require('gulp-useref');
+var uglify = require('gulp-uglify');
+var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
+var cssmin = require('gulp-cssmin');
+var runSequence = require('run-sequence');
 
 // Development Tasks
 // -----------------
@@ -16,11 +21,14 @@ gulp.task('browserSync', function() {
 })
 
 // Convert SCSS to CSS
-gulp.task('sass', function(){
-  return gulp.src('scss/main.scss')
-    .pipe(sass()) // Converts Sass to CSS with gulp-sass
-    .pipe(gulp.dest('public/css'))
-});
+gulp.task('sass', function() {
+  return gulp.src('scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
+    .pipe(sass().on('error', sass.logError)) // Passes it through a gulp-sass, log errors to console
+    .pipe(gulp.dest('public/css')) // Outputs it in the css folder
+    .pipe(browserSync.reload({ // Reloading with Browser Sync
+      stream: true
+    }));
+})
 
 // Watch main SCSS file
 gulp.task('watch', ['browserSync', 'sass'], function (){
@@ -30,7 +38,7 @@ gulp.task('watch', ['browserSync', 'sass'], function (){
 
 // Live reloading with browserSync
 gulp.task('sass', function() {
-  return gulp.src('scss/**/*.scss') // Gets all files ending with .scss in app/scss
+  return gulp.src(['scss/main.scss', 'scss/articles/*.scss'])
     .pipe(sass())
     .pipe(gulp.dest('public/css'))
     .pipe(browserSync.reload({
@@ -43,10 +51,16 @@ gulp.task('sass', function() {
 
 // Optimizing CSS and JavaScript
 // gulp.task('useref', function(){
-//   return gulp.src('views/pages/*.html')
+//   return gulp.src('ng/*.html')
 //     .pipe(useref())
 //     .pipe(gulpIf('*.js', uglify()))
-//     // Minifies only if it's a CSS file
 //     .pipe(gulpIf('*.css', cssnano()))
 //     .pipe(gulp.dest('dist'))
 // });
+
+// Minify CSS
+gulp.task('mincss', function () {
+    gulp.src('public/**/*.css')
+        .pipe(cssmin())
+        .pipe(gulp.dest('public'));
+});

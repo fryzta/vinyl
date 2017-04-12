@@ -1,0 +1,27 @@
+header {
+    height: 70px;
+    padding: 20px 0;
+
+    .brandLogo {
+        float: left;
+        font-family: $font-family-headline;
+    }
+
+    @media (min-width: $grid-md) {
+        .brandLogo { font-size: 23px; }
+    }
+
+    nav { float: right; }
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: $grid-md) {
+    header {
+        padding: 37px 0;
+        height: 100px;
+    }
+}

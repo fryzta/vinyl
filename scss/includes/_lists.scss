@@ -1,0 +1,105 @@
+// Article list
+.articleList {
+    margin-top: 45px;
+
+    a {
+        color: $text-color;
+        text-decoration: none;
+    }
+}
+
+@media (min-width: $grid-md) {
+    .articleList { margin-top: 90px; }
+}
+
+.articleList__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.articleList__item {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.articleList__content {
+    position: relative;
+    margin: 0 auto;
+    width: 237px;
+}
+
+.articleList__badge {
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    width: 34px;
+    height: 34px;
+    @include rotate(15deg);
+    border-radius: 50%;
+    background-color: $red;
+    line-height: 34px;
+    font-family: $font-family-secondary;
+    font-size: 15px;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.articleList__thumb-container {
+    width: 237px;
+    height: 316px;
+    border-radius: $border-radius;
+}
+
+.articleList__thumb-pokemon {
+    background-color: #85B8E2;
+}
+
+.articleList__thumb-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.articleList__headline {
+    margin: 18px 0 7px;
+    font-size: 18px;
+}
+
+.articleList__paragraph {
+    font-family: $font-family-secondary;
+    font-size: 16px;
+    color: $text-color-secondary;
+}
+
+@media (min-width: $grid-sm) {
+    .articleList__inner {
+        margin: 0 auto;
+        width: 511px;
+    }
+
+    .articleList__item {
+        width: 237px;
+        margin-right: 17px;
+
+        &:nth-child(2n) { margin-right: 0;}
+    }
+}
+
+@media (min-width: $grid-md) {
+    .articleList__inner { width: 765px; }
+
+    .articleList__item {
+        &:nth-child(2n) { margin-right: 17px;}
+        &:nth-child(3n) { margin-right: 0;}
+    }
+}
+
+@media (min-width: $grid-lg) {
+    .articleList__inner { width: 1019px; }
+
+    .articleList__item {
+        &:nth-child(2n) { margin-right: 17px;}
+        &:nth-child(3n) { margin-right: 17px;}
+    }
+}
