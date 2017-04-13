@@ -8,18 +8,16 @@
 
 // Base and grid
 @import "includes/grid";
-@import "includes/header";
 @import "includes/footer";
 @import "includes/scaffolding";
-@import "includes/article";
 
 // Core CSS
 @import "includes/media";
 
 // Components
-@import "includes/lists";
+@import "includes/list";
 @import "includes/hero";
-@import "includes/nav";
+@import "includes/player";
 
 // Utility classes
 @import "includes/utilities";

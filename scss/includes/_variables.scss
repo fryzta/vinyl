@@ -1,25 +1,20 @@
 // Colors
 $white: #fff;
-$gray: #606482;
-$gray-2: #C3C6D9;
-$gray-3: #9697A2;
-$gray-4: #EAECFA;
+$purple: #6970A6;
+$light-purple: #C4C8EF;
+$dark-purple: #363C71;
+$light-yellow: #FFD6A3;
+$yellow: #F9BB32;
 
-$red: #EF6464;
-$darkBlue: #22253D;
+$link-color: $light-yellow;
 
-$link-color: #006dff;
-
-$text-color: $darkBlue;
-$text-color-secondary: $gray;
-$body-bg: $white;
-
-$figcaption: $gray-3;
+$text-color: $white;
+$text-color-secondary: $light-purple;
+$body-bg: $purple;
 
 // Typography
-$font-family-headline: 'Poppins', sans-serif;
-$font-family-base: 'Crimson Text', serif;
-$font-family-secondary: 'Karla', sans-serif;
+$font-family-headline: 'Acme', sans-serif;
+$font-family-base: 'Karla', sans-serif;
 
 $font-size-base: 19px;
 $line-height-base: 27px;
@@ -28,10 +23,8 @@ $font-size-base-lg: 23px;
 $line-height-base-lg: 34px;
 
 // Elements
-$border-radius: 2px;
-$border-color: $gray-4;
 
 // Media queries
-$grid-sm: 521px;
+$grid-sm: 660px;
 $grid-md: 775px;
 $grid-lg: 1029px;

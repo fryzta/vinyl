@@ -44,19 +44,19 @@
           box-shadow: $shadow;
 }
 
-// CSS3 Content Columns
-@mixin content-columns($column-count, $column-gap: $grid-gutter-width) {
-    -webkit-column-count: $column-count;
-       -moz-column-count: $column-count;
-            column-count: $column-count;
-      -webkit-column-gap: $column-gap;
-         -moz-column-gap: $column-gap;
-              column-gap: $column-gap;
-}
-
 // Responsive image
 @mixin img-responsive($display: block) {
     display: $display;
     max-width: 100%;
     height: auto;
+}
+
+// Gradient
+@mixin gradient-vertical($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
+  background-image: -webkit-gradient(linear, left $start-percent, left $end-percent, from($start-color), to($end-color)); // Safari 4+, Chrome 2+
+  background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent); // Safari 5.1+, Chrome 10+
+  background-image:  -moz-linear-gradient(top, $start-color $start-percent, $end-color $end-percent); // FF 3.6+
+  background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent); // Standard, IE10
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
 }

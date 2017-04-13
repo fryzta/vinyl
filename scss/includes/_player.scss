@@ -1,0 +1,77 @@
+.player__container {
+    margin: -290px auto 50px;
+    width: 693px;
+    height: 681px;
+}
+
+.player {
+    position: relative;
+    margin-left: -40px;
+}
+
+.player__arm,
+.player__knob,
+.player__light,
+.player__record-container,
+.player__table { position: absolute;}
+
+.player__table { width: 693px; }
+
+.player__record-container {
+    top: 341px;
+    left: 384px;
+    transform: translate(-50%, -50%);
+}
+
+.player__record {
+    width: 556px;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.player__light {
+    top: 284px;
+    left: 327px;
+    width: 331px;
+}
+
+.player__knob {
+    top: 330px;
+    left: 345px;
+    width: 47px;
+}
+
+.player__arm {
+    top: 42px;
+    left: 540px;
+    width: 181px;
+}

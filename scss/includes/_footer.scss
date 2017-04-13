@@ -1,14 +1,15 @@
 footer {
+    background-color: $dark-purple;
     padding: 20px 0;
-    border-top: 1px solid $border-color;
-    font-family: $font-family-secondary;
+    font-family: $font-family-base;
+    color: $light-purple;
     text-align: center;
 }
 
 @media (min-width: $grid-sm) {
     footer {
         padding: 37px 0;
-        height: 100px;
+        height: 150px;
     }
 }
 

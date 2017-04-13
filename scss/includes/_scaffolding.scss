@@ -11,6 +11,7 @@ body {
     line-height: $line-height-base;
     color: $text-color;
     background-color: $body-bg;
+    @include gradient-vertical($dark-purple, $purple, 0%, 20%);
 }
 
 h1, h2, h3, h4, h5, h6 {
