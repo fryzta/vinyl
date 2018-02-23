@@ -12,9 +12,9 @@ var runSequence = require('run-sequence');
 /**
  * Push build to gh-pages
  */
-gulp.task('deploy', function() {
-  return gulp.src('./dist/**/*')
-    .pipe(ghPages());
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
 });
 
 // Development Tasks
