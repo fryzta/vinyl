@@ -1,0 +1,30 @@
+// Colors
+$white: #fff;
+$purple: #6970A6;
+$light-purple: #C4C8EF;
+$dark-purple: #363C71;
+$light-yellow: #FFD6A3;
+$yellow: #F9BB32;
+
+$link-color: $light-yellow;
+
+$text-color: $white;
+$text-color-secondary: $light-purple;
+$body-bg: $purple;
+
+// Typography
+$font-family-headline: 'Acme', sans-serif;
+$font-family-base: 'Karla', sans-serif;
+
+$font-size-base: 19px;
+$line-height-base: 27px;
+
+$font-size-base-lg: 23px;
+$line-height-base-lg: 34px;
+
+// Elements
+
+// Media queries
+$grid-sm: 660px;
+$grid-md: 775px;
+$grid-lg: 1029px;
