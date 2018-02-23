@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var deploy = require('gulp-gh-pages');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 var useref = require('gulp-useref');
@@ -7,6 +8,14 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var cssmin = require('gulp-cssmin');
 var runSequence = require('run-sequence');
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
+});
 
 // Development Tasks
 // -----------------
