@@ -28,6 +28,7 @@
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",
     "gulp-cssmin": "^0.1.7",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.2",
     "gulp-useref": "^3.1.2",
